@@ -37,27 +37,31 @@ document.getElementById("passwordD").value = passwordD
 function copyPassA() {
   let copyPassTextA = document.getElementById("passwordA");
   copyPassTextA.select();
-  copyPassTextA.setSelectionRange(0,9999);
-  document.execCommand("copyA");
+  copyPassTextA.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyPassTextA.value);
+  alert("Copied the text: " + copyPassTextA.value);
 }
 
 function copyPassB() {
   let copyPassTextB = document.getElementById("passwordB");
   copyPassTextB.select();
-  copyPassTextB.setSelectionRange(0,9999);
-  document.execCommand("copyB");
+  copyPassTextB.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyPassTextB.value);
+  alert("Copied the text: " + copyPassTextB.value);
 }
 
 function copyPassC() {
   let copyPassTextC = document.getElementById("passwordC");
   copyPassTextC.select();
-  copyPassTextC.setSelectionRange(0,9999);
-  document.execCommand("copyC");
+  copyPassTextC.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyPassTextC.value);
+  alert("Copied the text: " + copyPassTextC.value);
 }
 
 function copyPassD() {
   let copyPassTextD = document.getElementById("passwordD");
   copyPassTextD.select();
-  copyPassTextD.setSelectionRange(0,9999);
-  document.execCommand("copyD");
+  copyPassTextD.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyPassTextD.value);
+  alert("Copied the text: " + copyPassTextD.value);
 }
